@@ -1,0 +1,151 @@
+1255  execve("./lab_os", ["./lab_os", "results.txt"], 0x7ffdac10f130 /* 27 vars */) = 0
+1255  brk(NULL)                         = 0x5f4c27936000
+1255  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x737dd04f5000
+1255  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1255  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1255  fstat(3, {st_mode=S_IFREG|0644, st_size=19827, ...}) = 0
+1255  mmap(NULL, 19827, PROT_READ, MAP_PRIVATE, 3, 0) = 0x737dd04f0000
+1255  close(3)                          = 0
+1255  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+1255  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+1255  fstat(3, {st_mode=S_IFREG|0644, st_size=952616, ...}) = 0
+1255  mmap(NULL, 950296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x737dd0407000
+1255  mmap(0x737dd0417000, 520192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x737dd0417000
+1255  mmap(0x737dd0496000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8f000) = 0x737dd0496000
+1255  mmap(0x737dd04ee000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe7000) = 0x737dd04ee000
+1255  close(3)                          = 0
+1255  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1255  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+1255  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+1255  fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+1255  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+1255  mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x737dd0000000
+1255  mmap(0x737dd0028000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x737dd0028000
+1255  mmap(0x737dd01b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x737dd01b0000
+1255  mmap(0x737dd01ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x737dd01ff000
+1255  mmap(0x737dd0205000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x737dd0205000
+1255  close(3)                          = 0
+1255  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x737dd0404000
+1255  arch_prctl(ARCH_SET_FS, 0x737dd0404740) = 0
+1255  set_tid_address(0x737dd0404a10)   = 1255
+1255  set_robust_list(0x737dd0404a20, 24) = 0
+1255  rseq(0x737dd0405060, 0x20, 0, 0x53053053) = 0
+1255  mprotect(0x737dd01ff000, 16384, PROT_READ) = 0
+1255  mprotect(0x737dd04ee000, 4096, PROT_READ) = 0
+1255  mprotect(0x5f4bea77f000, 4096, PROT_READ) = 0
+1255  mprotect(0x737dd052d000, 8192, PROT_READ) = 0
+1255  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1255  munmap(0x737dd04f0000, 19827)     = 0
+1255  pipe2([3, 4], 0)                  = 0
+1255  pipe2([5, 6], 0)                  = 0
+1255  rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_INTERRUPT|SA_NODEFER|SA_RESETHAND|0xffffffff00000000, sa_restorer=0x737dd0045330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1255  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x737dd0404a10) = 1256
+1256  set_robust_list(0x737dd0404a20, 24 <unfinished ...>
+1255  close(3 <unfinished ...>
+1256  <... set_robust_list resumed>)    = 0
+1255  <... close resumed>)              = 0
+1256  close(4 <unfinished ...>
+1255  close(6 <unfinished ...>
+1256  <... close resumed>)              = 0
+1255  <... close resumed>)              = 0
+1256  close(5 <unfinished ...>
+1255  write(1, "Enter lines of floats separated "..., 62 <unfinished ...>
+1256  <... close resumed>)              = 0
+1255  <... write resumed>)              = 62
+1256  openat(AT_FDCWD, "results.txt", O_WRONLY|O_CREAT|O_APPEND, 0644 <unfinished ...>
+1255  write(1, "To finish, send EOF (Ctrl-D).\n\0", 31) = 31
+1255  write(1, ">> ", 3)                = 3
+1255  getrandom("\x05\x80\x41\xf8\x31\x26\x68\x42", 8, GRND_NONBLOCK) = 8
+1255  brk(NULL <unfinished ...>
+1256  <... openat resumed>)             = 4
+1255  <... brk resumed>)                = 0x5f4c27936000
+1256  getrandom( <unfinished ...>
+1255  brk(0x5f4c27957000 <unfinished ...>
+1256  <... getrandom resumed>"\x37\xaf\xcf\x98\x0b\x3e\x8a\x2c", 8, GRND_NONBLOCK) = 8
+1255  <... brk resumed>)                = 0x5f4c27957000
+1256  brk(NULL <unfinished ...>
+1255  read(0,  <unfinished ...>
+1256  <... brk resumed>)                = 0x5f4c27936000
+1256  brk(0x5f4c27957000)               = 0x5f4c27957000
+1256  read(3,  <unfinished ...>
+1255  <... read resumed>"1", 1)         = 1
+1255  read(0, "0", 1)                   = 1
+1255  read(0, " ", 1)                   = 1
+1255  read(0, "2", 1)                   = 1
+1255  read(0, " ", 1)                   = 1
+1255  read(0, "5", 1)                   = 1
+1255  read(0, "\n", 1)                  = 1
+1255  write(4, "10 2 5\n", 7)           = 7
+1256  <... read resumed>"1", 1)         = 1
+1255  read(5,  <unfinished ...>
+1256  read(3, "0", 1)                   = 1
+1256  read(3, " ", 1)                   = 1
+1256  read(3, "2", 1)                   = 1
+1256  read(3, " ", 1)                   = 1
+1256  read(3, "5", 1)                   = 1
+1256  read(3, "\n", 1)                  = 1
+1256  write(4, "1\n", 2)                = 2
+1256  write(6, "OK 1\n", 5 <unfinished ...>
+1255  <... read resumed>"O", 1)         = 1
+1256  <... write resumed>)              = 5
+1255  read(5,  <unfinished ...>
+1256  read(3,  <unfinished ...>
+1255  <... read resumed>"K", 1)         = 1
+1255  read(5, " ", 1)                   = 1
+1255  read(5, "1", 1)                   = 1
+1255  read(5, "\n", 1)                  = 1
+1255  write(1, "[child] ", 8)           = 8
+1255  write(1, "1", 1)                  = 1
+1255  write(1, "\n", 1)                 = 1
+1255  write(1, ">> ", 3)                = 3
+1255  read(0, "1", 1)                   = 1
+1255  read(0, "0", 1)                   = 1
+1255  read(0, "0", 1)                   = 1
+1255  read(0, " ", 1)                   = 1
+1255  read(0, "2", 1)                   = 1
+1255  read(0, "0", 1)                   = 1
+1255  read(0, " ", 1)                   = 1
+1255  read(0, "4", 1)                   = 1
+1255  read(0, "\n", 1)                  = 1
+1255  write(4, "100 20 4\n", 9)         = 9
+1256  <... read resumed>"1", 1)         = 1
+1255  read(5,  <unfinished ...>
+1256  read(3, "0", 1)                   = 1
+1256  read(3, "0", 1)                   = 1
+1256  read(3, " ", 1)                   = 1
+1256  read(3, "2", 1)                   = 1
+1256  read(3, "0", 1)                   = 1
+1256  read(3, " ", 1)                   = 1
+1256  read(3, "4", 1)                   = 1
+1256  read(3, "\n", 1)                  = 1
+1256  write(4, "1.25\n", 5)             = 5
+1256  write(6, "OK 1.25\n", 8 <unfinished ...>
+1255  <... read resumed>"O", 1)         = 1
+1256  <... write resumed>)              = 8
+1255  read(5,  <unfinished ...>
+1256  read(3,  <unfinished ...>
+1255  <... read resumed>"K", 1)         = 1
+1255  read(5, " ", 1)                   = 1
+1255  read(5, "1", 1)                   = 1
+1255  read(5, ".", 1)                   = 1
+1255  read(5, "2", 1)                   = 1
+1255  read(5, "5", 1)                   = 1
+1255  read(5, "\n", 1)                  = 1
+1255  write(1, "[child] ", 8)           = 8
+1255  write(1, "1.25", 4)               = 4
+1255  write(1, "\n", 1)                 = 1
+1255  write(1, ">> ", 3)                = 3
+1255  read(0, "", 1)                    = 0
+1255  close(4)                          = 0
+1256  <... read resumed>"", 1)          = 0
+1255  read(5,  <unfinished ...>
+1256  close(4)                          = 0
+1256  exit_group(0)                     = ?
+1255  <... read resumed>"", 1)          = 0
+1256  +++ exited with 0 +++
+1255  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1256, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+1255  close(5)                          = 0
+1255  wait4(1256, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1256
+1255  write(1, "Child exited normally.\n", 23) = 23
+1255  exit_group(0)                     = ?
+1255  +++ exited with 0 +++
